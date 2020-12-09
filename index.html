@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 
 <head>
@@ -13,6 +9,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 </head>
 
 <body class="landing is-preload">
@@ -21,32 +18,14 @@
 	<div id="page-wrapper">
 
 		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Chirag Bhansali</a></h1>
-			<nav id="nav">
-				<ul>
-					<li class="special">
-						<a href="#menu" class="menuToggle"><span>Menu</span></a>
-						<div id="menu">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="https://itunessearcher.azurewebsites.net/" target="_blank">ITunes Searcher</a></li>
-								<li><a href="https://bhansalichirag.github.io/DataVisualization/" target="_blank">Yelp
-										Recommendation</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div id="header"></div>
 
 		<!-- Banner -->
 		<section id="banner">
 			<div class="inner">
 				<h2>Chirag Bhansali</h2>
-				<p>ASU alumnus<br />
-					Software Engineer<br />
+				<p>MTS2 @ Hughes Network Systems<br />
+					ASU alumnus<br />
 				</p>
 			</div>
 			<a href="#one" class="more scrolly">Learn More</a>
@@ -57,8 +36,8 @@
 			<div class="inner">
 				<header class="major">
 					<h2>ABOUT ME</h2>
-					<p>Graduate student from Arizona State University, currently seeking full time <br />
-						opportunities in the field of software engineering</p>
+					<p>Graduate student from Arizona State University, currently working at Hughes Network Systems, LLC as
+						MTS2-software engineer</p>
 				</header>
 				<ul class="icons major">
 					<li><a href="https://github.com/bhansalichirag" target="_blank"
@@ -78,6 +57,18 @@
 		<section id="two" class="wrapper alt style2">
 			<div>
 				<section class="spotlight">
+					<div class="image"><img src="images/thomas-jensen-ISG-rUel0Uw-unsplash.jpg" alt="" /></div>
+					<div class="content">
+						<h2>Hughes Network Systems, LLC</h2>
+						<h3>MTS 2 - Software</h3>
+						<h4>Nov 2020 - Present</h4>
+						<p>
+							<li>Create a UI for reading, modifying, and adding data to the VM master sheet.</li>
+							<li>Languages used: ReactJS, PHP, Python</li>
+						</p>
+					</div>
+				</section>
+				<section class="spotlight">
 					<div class="image"><img src="images/william-iven-OP2EQ5g-Zkw-unsplash.jpg" alt="" /></div>
 					<div class="content">
 						<h2>ITunes Searcher</h2>
@@ -96,7 +87,7 @@
 					<div class="content">
 						<h2>Sensagrate</h2>
 						<h3>Software Engineer Intern</h3>
-						<h4>July 2020 - Present</h4>
+						<h4>July 2020 - Nov 2020</h4>
 						<p>
 							<li>Worked as full stack developer for the SensaCat application, which automatically screens
 								body temperature and reports the ones above the threshold.</li>
@@ -227,19 +218,7 @@
 			</div>
 		</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://github.com/bhansalichirag" target="_blank" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/bhansali-chirag/" target="_blank"
-						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto: chiragbhansali02@gmail.com" target="_blank" class="icon fa-envelope"><span
-							class="label">Email</span></a></li>
-				<li><a href="https://drive.google.com/file/d/11G3GzcVGiPDwPUj-ZQ_s7F2uPNn7Xd-H/view?usp=sharing"
-						target="_blank" class="icon solid fad fa-file-pdf"><span class="label">Resume</span></a></li>
-			</ul>
-		</footer>
+		<div id="footer"></div>
 
 	</div>
 
@@ -251,7 +230,12 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#header").load("header.html");
+			$("#footer").load("./footer.html");
+		});
+	</script>
 </body>
 
 </html>

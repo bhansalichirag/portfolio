@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -20,26 +15,7 @@
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<h1><a href="index.html">CHIRAG BHANSALI</a></h1>
-			<nav id="nav">
-				<ul>
-					<li class="special">
-						<a href="#menu" class="menuToggle"><span>Menu</span></a>
-						<div id="menu">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="https://itunessearcher.azurewebsites.net/" target="_blank">ITunes Searcher</a></li>
-								<li><a href="https://bhansalichirag.github.io/DataVisualization/" target="_blank">Yelp
-										Recommendation</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</header>
+		<div id="header"></div>
 
 		<!-- Main -->
 		<article id="main">
@@ -49,10 +25,10 @@
 			<section class="wrapper style5">
 				<div class="inner">
 
-					<h3 style="text-align: center;">Mobile Number:</h3>
+					<!-- <h3 style="text-align: center;">Mobile Number:</h3>
 					<h4 style="text-align: center;">+1(480)-799-5546</h4>
 
-					<hr />
+					<hr /> -->
 
 					<h3 style="text-align: center;">Email:</h3>
 					<h4 style="text-align: center;">chiragbhansali02@gmail.com</h4>
@@ -62,18 +38,7 @@
 		</article>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://github.com/bhansalichirag" target="_blank" class="icon brands fa-github"><span
-							class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/bhansali-chirag/" target="_blank"
-						class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto: chiragbhansali02@gmail.com" target="_blank" class="icon fa-envelope"><span
-							class="label">Email</span></a></li>
-				<li><a href="https://drive.google.com/file/d/11G3GzcVGiPDwPUj-ZQ_s7F2uPNn7Xd-H/view?usp=sharing"
-						target="_blank" class="icon solid fad fa-file-pdf"><span class="label">Resume</span></a></li>
-			</ul>
-		</footer>
+		<div id="footer"></div>
 
 	</div>
 
@@ -86,6 +51,12 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#header").load("header.html");
+			$("#footer").load("./footer.html");
+		});
+	</script>
 </body>
 
 </html>
